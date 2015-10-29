@@ -29,6 +29,9 @@ public class Magic8 {
 		if(RandomNumber == RandomNumber2) {
 			RandomNumber = Random.nextInt(max - min2 + 1) + min2;
 		}
+		if(question.toLowerCase().contains("love")) {
+			RandomNumber = 5;
+		}
 		String Output = answers[RandomNumber].toString();
 		System.out.println(Output);
 	}
